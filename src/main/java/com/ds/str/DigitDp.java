@@ -2,7 +2,7 @@ package com.ds.str;
 
 public class DigitDp {
 
-
+ static int xx[][][] = new int[181][181][2];
     public static int solve(String num, int numOfDigit, int sum, boolean tight) {
         if (sum < 0) {
             return 0;
@@ -11,10 +11,14 @@ public class DigitDp {
         if (numOfDigit == 1) {
 
             if (sum >= 0 && sum <= 9) {
+                xx[numOfDigit][sum][tight?1:0]=1;
                 return 1;
             }
 
             return 0;
+        }
+        if(xx[numOfDigit][sum][tight?1:0]==1){
+            return xx[numOfDigit][sum][tight?1:0];
         }
 
         int answer = 0;
@@ -28,8 +32,8 @@ public class DigitDp {
     }
 
     public static void main(String[] args) {
-        String num = "99";
-        System.out.println(solve(num, num.length(), 9, true));
+        String num = "22";
+        System.out.println(solve(num, num.length(), 4, true));
 
     }
 }
