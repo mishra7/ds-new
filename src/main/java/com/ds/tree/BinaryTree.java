@@ -1,4 +1,4 @@
-package com.ds.str;
+package com.ds.tree;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -74,8 +74,8 @@ public class BinaryTree {
         }
 
     }
-    public  Node getRoot(){
-        return  this.head;
+    public Node getRoot() {
+        return this.head;
     }
 
 }

@@ -1,6 +1,7 @@
-package com.ds.str;
+package com.ds.tree;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class PrintDiagonalElementsSum {
 	static Map<Integer,Integer> map=new HashMap<>();
@@ -34,7 +35,7 @@ public class PrintDiagonalElementsSum {
 		System.out.println(""+map);
 	}
 
-	public static Node printDiagonalSum(Node root,int diagonalId) {
+	public static Node printDiagonalSum(Node root, int diagonalId) {
 		if(root==null)
 			return root;
 
