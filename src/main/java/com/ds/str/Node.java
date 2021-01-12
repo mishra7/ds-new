@@ -1,8 +1,8 @@
 package com.ds.str;
 
 public class Node {
-    private Integer data;
-    private Node left;
+     Integer data;
+     Node left;
 
     @Override
     public String toString() {
@@ -13,7 +13,7 @@ public class Node {
                 '}';
     }
 
-    private Node right;
+    Node right;
 
     public Node(int data) {
         this.data = data;
