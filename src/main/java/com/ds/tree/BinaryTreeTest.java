@@ -13,6 +13,7 @@ public class BinaryTreeTest {
         bt.add(8);
         bt.add(9);
         System.out.println(bt);
+        System.out.println("root" + bt.getRoot());
         bt.print();
 
         LCAInTree lca = new LCAInTree();
